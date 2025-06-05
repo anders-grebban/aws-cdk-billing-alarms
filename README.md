@@ -12,6 +12,13 @@ It adds a Billing Alarm and an SNS Topic and Subscription for the configured ema
 ## Config
 Set your preferences in `billing-alarms.yml`
 
+```json
+id: CustomerXBillingAlarm // The name used in AWS for the Billing Alarm
+monthlyThreshold: 2000 // The threshold in USD for triggering the notifications
+emails: // List of email addresses. Each address will add a SNS Subscription to the created SNS Topic.
+  - user@example.com
+```
+
 ## Usage
 - Install and configure AWS CLI and AWS CDK
 - Make sure you're on the correct AWS account
