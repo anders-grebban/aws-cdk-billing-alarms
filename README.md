@@ -1,20 +1,20 @@
 ## This is...
-A AWS CDK app with a Billing Alarms contstruct used for creating Billing Alarms with email notifications to your AWS account.
+An AWS CDK app with a Billing Alarms construct used for creating Billing Alarms with email notifications to your AWS account.
 
-It adds a Billing Alarm and a SNS Topic and Subscription for the configured email address.
+It adds a Billing Alarm and an SNS Topic and Subscription for the configured email address.
 
 ## Prerequisites
 
-- Billing Alerts (sends billing data to ClodWatch) must be active in your AWS account. (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/gs_monitor_estimated_charges_with_cloudwatch.html#gs_turning_on_billing_metrics)
-- Install and config AWS CLI
+- Billing Alerts (sends billing data to CloudWatch) must be active in your AWS account. (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/gs_monitor_estimated_charges_with_cloudwatch.html#gs_turning_on_billing_metrics)
+- Install and configure AWS CLI
 - Install AWS CDK
 
 ## Config
 Set your preferences in `billing-alarms.yml`
 
 ## Usage
-- Install and config AWS CLI and AWS CDK
+- Install and configure AWS CLI and AWS CDK
 - Make sure you're on the correct AWS account
-- Set your prefs in the config file (`billing-alarms.yml`)
+- Set your preferences in the config file (`billing-alarms.yml`)
 - `cdk synth` creates the CloudFormation files locally for review
 - `cdk deploy` (creates and) deploys the CloudFormation files to your AWS account
