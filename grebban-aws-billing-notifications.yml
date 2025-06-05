@@ -1,0 +1,4 @@
+id: CustomerXBillingAlarm
+monthlyThreshold: 9999
+emails:
+  - anders.ekelund@grebban.com
