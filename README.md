@@ -25,3 +25,8 @@ emails: // List of email addresses. Each address will add a SNS Subscription to 
 - Set your preferences in the config file (`billing-alarms.yml`)
 - `cdk synth` creates the CloudFormation files locally for review
 - `cdk deploy` (creates and) deploys the CloudFormation files to your AWS account
+
+## Thoughts and TODOs
+* Switch to another construct package that allows for percent thresholds rather than absolute thresholds
+* Move this into `grebban/AWS-CDK-v2`?
+* Add error handling
