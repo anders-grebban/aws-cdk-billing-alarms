@@ -5,7 +5,7 @@ import * as YAML from 'yaml';
 import * as fs from 'fs';
 
 const app = new cdk.App();
-const config = YAML.parse(fs.readFileSync('grebban-aws-billing-notifications.yml', 'utf8'));
+const config = YAML.parse(fs.readFileSync('billing-alarms.yml', 'utf8'));
 
 new BillingAlarmStack(app, 'GrebbanAwsBillingNotificationsStack', {
   // Billing Alarms must reside in us-east-1 region according to below link 

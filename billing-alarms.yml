@@ -1,0 +1,4 @@
+id: CustomerXBillingAlarm
+monthlyThreshold: 2000
+emails:
+  - user@example.com

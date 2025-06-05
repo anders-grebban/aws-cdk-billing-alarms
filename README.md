@@ -1,14 +1,20 @@
-# Welcome to your CDK TypeScript project
+## This is...
+A AWS CDK app with a Billing Alarms contstruct used for creating Billing Alarms with email notifications to your AWS account.
 
-This is a blank project for CDK development with TypeScript.
+It adds a Billing Alarm and a SNS Topic and Subscription for the configured email address.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Prerequisites
 
-## Useful commands
+- Billing Alerts (sends billing data to ClodWatch) must be active in your AWS account. (https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/gs_monitor_estimated_charges_with_cloudwatch.html#gs_turning_on_billing_metrics)
+- Install and config AWS CLI
+- Install AWS CDK
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Config
+Set your preferences in `billing-alarms.yml`
+
+## Usage
+- Install and config AWS CLI and AWS CDK
+- Make sure you're on the correct AWS account
+- Set your prefs in the config file (`billing-alarms.yml`)
+- `cdk synth` creates the CloudFormation files locally for review
+- `cdk deploy` (creates and) deploys the CloudFormation files to your AWS account
