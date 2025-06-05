@@ -25,6 +25,7 @@ emails: # List of email addresses. Each address will add a SNS Subscription to t
 - Set your preferences in the config file (`billing-alarms.yml`)
 - `cdk synth` creates the CloudFormation files locally for review
 - `cdk deploy` (creates and) deploys the CloudFormation files to your AWS account
+- Look for a subscription confirmation email from `no-reply@sns.amazonaws.com` and click the `confirm subscription` link. (or log into AWS SNS and confirm the subscription there)
 
 ## Thoughts and TODOs
 * Switch to another construct package that allows for percent thresholds rather than absolute thresholds
